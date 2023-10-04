@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": { 
+  "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",
@@ -20,8 +20,10 @@
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "lucide-react": "^0.241.0",
+    "next": "latest",
     "postcss": "8.4.24",
     "query-string": "^8.1.0",
+    "react": "latest",
     "react-dom": "latest",
     "react-hot-toast": "^2.4.1",
     "react-spinners": "^0.13.8",
