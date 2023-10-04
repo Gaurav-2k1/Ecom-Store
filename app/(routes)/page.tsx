@@ -2,7 +2,7 @@ import getBillboard from "@/actions/get-billboard";
 import getProducts from "@/actions/get-products";
 import ProductList from "@/components/product-list";
 import Billboard from "@/components/ui/billboard";
-import Container from "@/components/ui/container";
+import Containers from "@/components/ui/container";
 
 export const revalidate = 0;
 
@@ -11,7 +11,7 @@ const HomePage = async () => {
   const billboard = await getBillboard("c582533b-ddec-471d-9621-49344bdd5e90");
 
   return (
-    <Container>
+    <Containers>
       <div className="space-y-10 pb-10">
         <Billboard 
           data={billboard}
@@ -20,7 +20,7 @@ const HomePage = async () => {
           <ProductList title="Featured Products" items={products} />
         </div>
       </div>
-    </Container>
+    </Containers>
   )
 };
 

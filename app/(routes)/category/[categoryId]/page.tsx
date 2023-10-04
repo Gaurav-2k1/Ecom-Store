@@ -1,5 +1,4 @@
 
-import Container from '@/components/ui/container';
 import Billboard from '@/components/ui/billboard';
 import ProductCard from '@/components/ui/product-card';
 import NoResults from '@/components/ui/no-results';
@@ -11,6 +10,7 @@ import getColors from '@/actions/get-colors';
 
 import Filter from './components/filter';
 import MobileFilters from './components/mobile-filters';
+import Containers from '@/components/ui/container';
 
 export const revalidate = 0;
 
@@ -39,7 +39,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
 
   return (
     <div className="bg-white">
-      <Container>
+      <Containers>
         <Billboard 
           data={category.billboard}
         />
@@ -68,7 +68,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
             </div>
           </div>
         </div>
-      </Container>
+      </Containers>
     </div>
   );
 };
