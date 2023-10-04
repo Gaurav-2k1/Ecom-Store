@@ -1,9 +1,9 @@
-import Containers from "../../../../components/ui/container";
+import Container from "@/components/container";
 import Skeleton from "@/components/ui/skeleton";
 
 const Loading = () => {
   return (
-    <Containers>
+    <Container>
       <div className="w-full h-full p-8">
         <Skeleton className="w-full aspect-square rounded-xl md:aspect-[2.4/1]" />
         <div className="lg:grid lg:grid-cols-5 lg:gap-x-8 mt-8 h-full">
@@ -22,7 +22,7 @@ const Loading = () => {
           </div>
         </div>
       </div>
-    </Containers>
+    </Container>
   );
 }
  

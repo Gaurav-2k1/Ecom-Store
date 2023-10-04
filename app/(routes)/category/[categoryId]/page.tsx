@@ -10,7 +10,7 @@ import getColors from '@/actions/get-colors';
 
 import Filter from './components/filter';
 import MobileFilters from './components/mobile-filters';
-import Containers from '../../../../components/ui/container';
+import Container from '@/components/container';
 
 export const revalidate = 0;
 
@@ -39,7 +39,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
 
   return (
     <div className="bg-white">
-      <Containers>
+      <Container>
         <Billboard
           data={category.billboard}
         />
@@ -68,7 +68,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
             </div>
           </div>
         </div>
-      </Containers>
+      </Container>
     </div>
   );
 };
